@@ -1,0 +1,54 @@
+.c-section-about-us {
+  background-color: #04b5b5;
+  color: $c-white;
+
+  &__wrapper {
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    display: flex;
+
+    @include media ('<desktop') {
+      flex-direction: column;
+      display: flex;
+      padding: 20px;
+    }
+  }
+  
+  &__img {
+    margin: 15px -10px 0 -50px;
+    max-width: 650px;
+    
+    @include media ('<desktop') {
+      margin: 0 auto;
+      order: 2;
+    }
+  }
+
+  &__info {
+    margin: -56px 0 0 85px;
+    max-width: 501px;
+
+    @include media ('<desktop') {
+      text-align: center;
+      margin: 0 auto;
+      order: 1;
+    }
+  }
+
+  &__title {
+    font-family: $f-raleway-bold;
+    font-size: px($fs-h2);
+    margin-bottom: 5px;
+
+    @include media ('<tablet') {
+      font-size: px($fs-h3);
+    }
+  }
+
+  &__text {
+    font-family: $f-raleway-light;
+    font-size: px($fs-text);
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,11 @@
+@keyframes box-shadow-block {
+  0% {
+    box-shadow: 1px 1px 1px 1px black;
+  }
+  33% {
+    box-shadow: 3px 3px 3px 3px black;
+  }
+  100% {
+    box-shadow: 5px 5px 5px 5px black;
+  }
+}

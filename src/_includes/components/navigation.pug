@@ -1,0 +1,49 @@
+mixin navigation()
+  nav.c-navigation
+    ul.c-navigation__list#myTopnav
+      button.c-navigation__btn
+      li.c-navigation__item
+        +link({
+          href: '#home',
+          text: 'HOME',
+          navStyle: true
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#about',
+          text: 'ABOUT',
+          navStyle: true
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#services',
+          text: 'SERVICES',
+          navStyle: true
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#gallery',
+          text: 'GALLERY',
+          navStyle: true
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#blog',
+          text: 'BLOG',
+          navStyle: true
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#contact',
+          text: 'CONTACT',
+          navStyle: true
+        })
+      li.c-navigation__item 
+        +link({
+          href: 'javascript:void(0);',
+          text: '',
+          navStyle: true,
+          burgerStyle: true,
+          onclick: 'myFunction()'
+        })
+    +burger-menu()

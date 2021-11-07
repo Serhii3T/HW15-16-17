@@ -1,0 +1,34 @@
+mixin banner()
+  .c-banner#home
+    .c-banner__wrapper.c-container
+
+      //- top 
+      .c-banner__top.d-flex.justify-content-between
+
+        //- logo
+        .c-banner__logo
+          +logo()
+
+        //- navigation
+        .c-banner__navigation
+          +navigation()
+
+      //- bottom
+      .c-banner__bottom
+
+        //- title
+        h3.c-banner__title Fresh Life
+
+        //- text
+        p.c-banner__text
+          | Sed do eiusmod tempor incididunt ut labore et dolore magna
+          | aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          | ullamco.
+
+        //- btn-link
+        .c-banner__btn
+          +link({
+            href: './home.html',
+            text: 'GET FREE NOW',
+            linkMode: true
+          })

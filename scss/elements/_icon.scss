@@ -1,0 +1,8 @@
+.e-icon{
+  @include size(50);
+
+  &__svg{
+    width: 100%;
+    height: 100%;
+  }
+}

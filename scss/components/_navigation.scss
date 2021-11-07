@@ -1,0 +1,97 @@
+.c-navigation {
+
+  &__btn {
+    background-color: transparent;
+    position: absolute;
+    @include size(30);
+    display: none;
+    border: none;
+    right: 10px;
+    top: 10px;
+
+    &::before,
+    &::after {
+      background-color: $c-black;
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      content: "";
+      right: 0;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    @include media('<tablet') {
+      display: block;
+    }
+  }
+
+  &__list{
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+
+    @include media("<tablet") {
+      justify-content: flex-start;
+      flex-direction: column;
+      transition: $t-normal;
+      background: white;
+      position: absolute;
+      max-width: 250px;
+      padding: 20px;
+      right: -100%;
+      width: 100%;
+      z-index: 10;
+      bottom: 0;
+      top: 0;
+
+      &.active {
+        right: 0;
+      }
+    }
+  }
+  
+  &__item {
+    font-size: em($fs-base);
+    padding-left: 37px;
+    width: fit-content;
+
+    &:last-child {
+      padding-left: 0;
+    }
+
+    @include media ('<tablet') {
+      padding-left: 0;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .c-navigation__list a:not(:first-child) {display: none;}
+  .c-navigation__list a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .c-navigation__list.responsive {position: relative;}
+  .c-navigation__list.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .c-navigation__list.responsive a {
+    text-align: left;
+    display: block;
+    float: none;
+  }
+}

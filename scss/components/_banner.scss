@@ -1,0 +1,37 @@
+.c-banner {
+  background-image: url(./assets/images/banner.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &__wrapper {
+    min-height: 1000px;
+  }
+
+  &__top {
+    padding: 50px 0;
+    margin-bottom: 185px;
+  }
+
+  &__bottom {
+    max-width: 390px;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: $f-raleway-black;
+    line-height: em($lh-small);
+    font-size: em($fs-h3);
+  }
+
+  &__text {
+    margin-bottom: 27px;
+    font-size: em($fs-text);
+  }
+
+  &__btn {
+    background-color: $c-orange;
+    box-shadow: $bs-base;
+    width: fit-content;
+  }
+}

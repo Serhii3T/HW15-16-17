@@ -1,0 +1,45 @@
+.e-link {
+  transition: $t-normal;
+  display: inline-block;
+
+  &--logo-style {
+    font-family: $f-pacifico-reg;
+    font-size: em($fs-logo);
+    line-height: $lh-typic;
+
+    &:hover {
+      background-color: transparent;
+      color: $c-turquoise;
+    }
+  }
+
+  &--btn {
+    font-family: $f-raleway-light;
+    font-size: em($fs-link);
+    padding: 15px 26px;
+    color: $c-white;
+
+    &:hover {
+      color: $c-white;
+    }
+  }
+
+  &--nav-style {
+    color: $c-black;
+    font-family: $f-raleway-bold;
+    margin-top: 7px;
+    padding: 5px 0;
+
+    &:hover {
+      background-color: transparent;
+      color: $c-turquoise;
+    }
+  }
+
+  &--burger-icon {
+    display: none;
+  }
+}
+#active {
+  box-shadow: 0 3px 0 0 $c-orange inset;
+}

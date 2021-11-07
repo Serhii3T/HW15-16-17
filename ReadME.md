@@ -1,0 +1,1 @@
+<svg class="icon icon-twitter-sign"><use xlink:href="#icon-twitter-sign"></use></svg>
