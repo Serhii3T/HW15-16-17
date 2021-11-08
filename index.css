@@ -564,7 +564,7 @@ svg {
   display: flex;
 }
 .c-section-our-services__img {
-  background-image: url(../../assets/images/our-services.png);
+  background-image: url(./assets/images/services.png);
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
@@ -671,7 +671,7 @@ svg {
 }
 
 .c-section-subscribe {
-  background-image: url(../../assets/images/subscribe.png);
+  background-image: url(./assets/images/subscribe-to.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -769,7 +769,7 @@ svg {
 }
 
 .section-contact {
-  background-image: url(../../assets/images/contact.png);
+  background-image: url(./assets/images/contact.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
